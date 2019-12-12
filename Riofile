@@ -6,7 +6,7 @@ services:
     version: v0
     ports: 80:8080/http
     env:
-    - COW_COLOR=pink
+    - COW_COLOR=yellow
     autoscale:
       concurrency: 10
       maxReplicas: 5
