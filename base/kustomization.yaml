@@ -10,7 +10,7 @@ resources:
 configMapGenerator:
 - name: rancher-demo-config
   envs: 
-  - configs/env.txt
+  - env.txt
 images:
 - name: monachus/rancher-demo
   newName: monachus/rancher-demo
