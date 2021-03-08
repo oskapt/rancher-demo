@@ -9,7 +9,7 @@ resources:
 - ingress.yaml
 configMapGenerator:
 - name: rancher-demo-config
-  env: configs/env.txt
+  envs: configs/env.txt
 images:
 - name: monachus/rancher-demo
   newName: monachus/rancher-demo
