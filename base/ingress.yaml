@@ -1,4 +1,4 @@
-apiVersion: extensions/v1beta1
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: rancher-demo
@@ -6,10 +6,12 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-  - host: $(URL_HOST)
-    http:
+  - http:
       paths:
       - path: /
+        pathType: Prefix
         backend:
-          serviceName: rancher-demo
-          servicePort: 80
+          service
+            name: rancher-demo
+            port: 
+              number: 80
