@@ -13,7 +13,7 @@ configMapGenerator:
 images:
 - name: monachus/rancher-demo
   newName: monachus/rancher-demo
-  newTag: latest
+  newTag: v1.4.1
 commonLabels:
   app.kubernetes.io/name: rancher-demo
 vars:
