@@ -4,4 +4,4 @@ metadata:
   name: source-vars
 data:
   MY_NAMESPACE: rancher-demo
-  URL_HOST: rancher-demo.cl.monach.us
+  URL_HOST: rancher-demo.home.monach.us
